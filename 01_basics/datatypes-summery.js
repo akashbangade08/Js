@@ -35,3 +35,31 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+/**********************************************************/
+// Stack Memory (Primitive), Heap Memory(Non-Primitive)
+
+let Myname = 'AKASHBANGADE'
+
+let anotherName = Myname
+anotherName = 'Test'
+
+console.log(anotherName);
+console.log(Myname);
+
+// Heap Memory
+
+let userData = {
+    username: 'Akash',
+    age : 25
+}
+
+let UserValue = userData
+
+UserValue.username == 'Test'
+
+console.log(userData.username);
+console.log(UserValue.username);
+
